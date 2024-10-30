@@ -1,0 +1,98 @@
+/* Style complémentaire Nav Bar */
+.btn-primary {
+    background-color: #4942E4 !important;
+    border-color: #0C0C0C !important;
+}
+
+.bg-dark {
+    background-color: #0C0C0C  !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300BFFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+#logo {
+    border-radius: 10%;
+}
+a {
+    font-family: "Montserrat", sans-serif !important;
+    color: #00BFFF !important;
+}
+/* Fin de style Nav Bar */
+
+/* P blanc et class couleur bleu */
+body {
+    background-color: #0C0C0C;
+}
+p {
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+}
+
+.blue {
+    color: #00BFFF !important;
+}
+
+h1 {
+    color: #00BFFF;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 60px;
+}
+h2 {
+    color: white;
+    font-size: 45px;
+    font-family: "roboto slab";
+    font-weight: 400;
+}
+h3 ,h5 {
+    color: #69C9D0;
+    font-family: "Poppins";
+}
+h5 {
+    font-size: medium;
+}
+
+.mt-n1 {
+    margin-top: -1rem !important;
+  }
+
+form {
+    background-color: rgba(92, 92, 92, 0.189);
+    border-radius: 10px;
+}
+.custom-border {
+    border-color: #eaeaea;
+    background-color: #272727a0;
+    color: white;
+}
+input::placeholder {
+    color: #f8f8f8 !important; /* Remplacez #ff0000 par la couleur souhaitée */
+    opacity: 1; /* Pour s'assurer que l'opacité est à 100% */
+}
+
+
+.custom-card {
+    color: white;
+    background-color:#0C0C0C ;
+    border: none;
+    opacity: 2;
+}
+
+/* carrousel */
+.carousel-control-prev::before {
+    content: '✖';
+    font-size: 2rem;
+    color: red;
+  }
+  
+  .carousel-control-next::before {
+    content: '❤';
+    font-size: 2rem;
+    color: red;
+  }
+
+  .playlike {
+    background-color: rgba(55, 55, 55, 0.167);
+    border: solid 1 px rgb(56, 56, 56);
+    border-radius: 10px;
+  }

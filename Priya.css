@@ -1,0 +1,97 @@
+.btn-primary {
+    background-color: #4942E4 !important;
+    border-color: #0C0C0C !important;
+}
+
+.bg-dark {
+    background-color: #0C0C0C  !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300BFFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+#logo {
+    border-radius: 10%;
+}
+a {
+    color: #00BFFF !important;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #0c0c0c;
+}
+h1 {
+    color: #00BFFF;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 60px;
+}
+h2 {
+    color: white;
+    font-size: 45px;
+    font-family: "roboto slab";
+    font-weight: 400;
+}
+h3 {
+    color: #69C9D0;
+    font-family: "Poppins";
+}
+p {
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+}
+
+.carousel-item{
+    background-color: #0c0c0c;
+    width:100%;
+    border-radius: 10px;
+    box-shadow:0 5px 20px #4249e4 ;
+}
+
+img{
+    border-radius: 10px;
+}
+.buttons button{
+    background-color:white ;
+    padding: 20px 25px;
+    border-radius: 50%;
+    box-shadow:0 5px 10px #4942E4;
+    color: #4942E4;
+    cursor: pointer;
+
+}
+ .buttons>button:hover{
+    color:#00BFFF;
+    box-shadow:0 5px 10px #00BFFF;
+}
+
+  h1 {
+    color: #00BFFF;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 60px;
+}
+h2 {
+    color: white;
+    font-size: 45px;
+    font-family: "roboto slab";
+    font-weight: 400;
+}
+h3 {
+    color: #69C9D0;
+    font-family: "Poppins";
+}
+p {
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+}
+/* P blanc et class couleur bleu */
+footer>p {
+    color: white;
+}
+
+.blue {
+    color: #00BFFF !important;
+}

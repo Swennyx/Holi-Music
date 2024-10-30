@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoliMusic</title>
-    <link rel="icon" href="Holi Logo 1.webp">
+    <title>Holi Music</title>
+    <link rel="icon" href="HoliLogo.webp">
     <link rel="stylesheet" href="Priya.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -47,7 +47,7 @@
     <!-- Fin de la NavBar -->
      <!--main starts-->
      <main>
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide container-lg mt-5 mb-5">
             <div class="carousel-indicators position-relative mb-0">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -66,7 +66,7 @@
                       <p class="text-center mt-2">Selena Gomez</p>
                   <div class="buttons text-center p-2 mb-2">
                       <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                      <button><i class="fa-solid fa-play bg-white"></i></button>
+                      <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                       <button><i class="fa-solid fa-heart bg-white"></i></button>
                   </div>
                 </div>
@@ -79,7 +79,7 @@
                   <p class="text-center mt-2">luis ft.</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button><i class="fa-solid fa-play bg-white"></i></button>
+                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -92,7 +92,7 @@
                   <p class="text-center mt-2">Justin Beiber</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button><i class="fa-solid fa-play bg-white"></i></button>
+                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                   <p class="text-center mt-2">Ed Sheeran</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button><i class="fa-solid fa-play bg-white"></i></button>
+                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                   <p class="text-center mt-2">Alan Walker</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button><i class="fa-solid fa-play bg-white"></i></button>
+                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -131,7 +131,7 @@
                   <p class="text-center mt-2">Indila</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button><i class="fa-solid fa-play bg-white"></i></button>
+                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -150,6 +150,17 @@
 
     </main>
     <!--main ends-->
+         <!-- test ficheir audio -->
+         <div class="container audio-container d-flex d-none">
+            <h2>Écouter l'audio</h2>
+            <!-- Balise audio avec des contrôles -->
+            <audio controls id="myAudio">
+                <source src="creative-technology-showreel-241274.mp3" type="audio/mp3">
+                Ton navigateur ne supporte pas la balise audio.
+            </audio>
+            <button onclick="document.getElementById('myAudio').play()">Lire l'audio</button>
+            <button onclick="document.getElementById('myAudio').pause()">Pause</button>
+        </div>
     <!-- Footer bootstrap responsive -->
         <footer>
            <div class="container-fluid d-flex bg-dark">
@@ -173,5 +184,6 @@
            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+        <script src="script.js"></script>
     </body>
 </html>

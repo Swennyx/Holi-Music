@@ -53,19 +53,21 @@ p {
 img{
     border-radius: 10px;
 }
-.buttons button{
-    background-color:white ;
-    padding: 20px 25px;
-    border-radius: 50%;
-    box-shadow:0 5px 10px #4942E4;
-    color: #4942E4;
-    cursor: pointer;
 
+.hover-blue:hover {
+    color: #00BFFF !important;
+    box-shadow: 0 5px 10px #00BFFF !important;
 }
- .buttons>button:hover{
-    color:#00BFFF;
-    box-shadow:0 5px 10px #00BFFF;
+
+.hover-pink:hover {
+    color: hotpink !important;
+    box-shadow: 0 5px 10px hotpink !important;
 }
+.hover-purple:hover {
+    color: purple !important;
+    box-shadow: 0 5px 10px purple !important;
+}
+
 
   h1 {
     color: #00BFFF;
@@ -94,4 +96,11 @@ footer>p {
 
 .blue {
     color: #00BFFF !important;
+}
+
+.pink {
+    color:hotpink !important;
+}
+.purple {
+    color: purple !important;
 }

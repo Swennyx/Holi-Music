@@ -64,11 +64,11 @@
                 <div class="text">
                     <h2 class="text-center mt-1 blue">Calm Down</h2>
                       <p class="text-center mt-2">Selena Gomez</p>
-                  <div class="buttons text-center p-2 mb-2">
-                      <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                      <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
-                      <button><i class="fa-solid fa-heart bg-white"></i></button>
-                  </div>
+                      <div class="buttons text-center p-2 mb-2">
+                        <button><i class="fa-solid fa-xmark bg-white"></i></button>
+                        <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
+                        <button><i class="fa-solid fa-heart bg-white"></i></button>
+                    </div>
                 </div>
               </div>
               <!--card2-->
@@ -79,7 +79,7 @@
                   <p class="text-center mt-2">luis ft.</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
+                    <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -92,7 +92,7 @@
                   <p class="text-center mt-2">Justin Beiber</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
+                    <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                   <p class="text-center mt-2">Ed Sheeran</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
+                    <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                   <p class="text-center mt-2">Alan Walker</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
+                    <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -131,7 +131,7 @@
                   <p class="text-center mt-2">Indila</p>
                   <div class="buttons text-center p-2 mb-2">
                     <button><i class="fa-solid fa-xmark bg-white"></i></button>
-                    <button onclick="document.getElementById('myAudio').play()"><i class="fa-solid fa-play bg-white"></i></i></button>
+                    <button onclick="playAudio('audio1')" class="playButton"><i class="fa-solid fa-play bg-white"></i></button>
                     <button><i class="fa-solid fa-heart bg-white"></i></button>
                 </div>
               </div>
@@ -154,12 +154,10 @@
          <div class="container audio-container d-flex d-none">
             <h2>Écouter l'audio</h2>
             <!-- Balise audio avec des contrôles -->
-            <audio controls id="myAudio">
-                <source src="creative-technology-showreel-241274.mp3" type="audio/mp3">
+            <audio controls id="audio">
+                <source id="audioSource" src="creative-technology-showreel-241274.mp3" type="audio/mp3">
                 Ton navigateur ne supporte pas la balise audio.
             </audio>
-            <button onclick="document.getElementById('myAudio').play()">Lire l'audio</button>
-            <button onclick="document.getElementById('myAudio').pause()">Pause</button>
         </div>
     <!-- Footer bootstrap responsive -->
         <footer>
